@@ -24,12 +24,12 @@ const workflowStore = useWorkflowStore()
       </p>
     </UCard>
 
-    <UCard class="cursor-pointer hover:border-purple-500 transition-colors"
-      :class="{ 'border-purple-500': workflowStore.projectType === 'legacy' }"
-      @click="workflowStore.setProjectType('legacy')">
+    <UCard class="border-gray-300 opacity-75"
+      :class="{ 'border-gray-300': workflowStore.projectType === 'legacy' }">
       <div class="flex items-center mb-2">
-        <UIcon name="i-heroicons-wrench-screwdriver" class="h-6 w-6 mr-2 text-purple-600" />
+        <UIcon name="i-heroicons-wrench-screwdriver" class="h-6 w-6 mr-2 text-gray-600" />
         <h3 class="text-lg font-semibold">Legacy/Existing Project</h3>
+        <span class="ml-2 text-sm italic text-gray-500">Coming soon</span>
       </div>
       <p class="text-sm text-gray-600">Work on an existing codebase</p>
       <p class="mt-4 text-sm text-gray-500">
